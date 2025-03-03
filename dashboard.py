@@ -5,8 +5,6 @@ import plotly.express as px
 import json
 from millify import millify
 
-# TODO : Set up filepath to be opened from local folder
-
 # Set up the basic page configuration
 st.set_page_config(
     page_title="Final Project Data Dashboard",
@@ -50,7 +48,7 @@ def load_data(filepath):
     return data
 
 
-data = load_data("/Users/manon/Data_Analyse_Python/Final_Project/salaries_data.xlsx")
+data = load_data("./salaries_data.xlsx")
 
 # Set up traduction
 _, language_column = st.columns([6, 1])
@@ -63,8 +61,8 @@ with language_column:
     )
 
     filename = {
-        "\U0001f1ec\U0001f1e7": "/Users/manon/Data_Analyse_Python/Final_Project/en.json",
-        "\U0001f1eb\U0001f1f7": "/Users/manon/Data_Analyse_Python/Final_Project/fr.json",
+        "\U0001f1ec\U0001f1e7": "./en.json",
+        "\U0001f1eb\U0001f1f7": "./fr.json",
     }
 
     with open(filename[selected_language], "r", encoding="utf-8") as f:
@@ -866,7 +864,7 @@ with tabs[3]:
         map_data["country_name"] = map_data["company_location"].map(TRAD["COUNTRY"])
         # Convert ISO2 to ISO3
         with open(
-            "/Users/manon/Data_Analyse_Python/Final_Project/country_iso.json",
+            "./country_iso.json",
             "r",
             encoding="utf-8",
         ) as f:
