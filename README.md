@@ -48,7 +48,9 @@ To install the dependencies, use environment.yml.
 - **Jupyter Notebook:**  
   Open and run the `explanatory_analysis.ipynb` file using JupyterLab to explore the data analysis.  
 
-- **Streamlit Dashboard:**  
+- **Streamlit Dashboard:**
+  You can click here to see the dashboard : [Dashboard link](https://certification-data-analysis-salaries-mrousse.streamlit.app/).
+  OR
   To launch the dashboard, run the following command in your terminal:
 
   ```bash
@@ -114,7 +116,8 @@ Pour installer les dépendances, utiliser le fichier environment.yml.
 - **Jupyter Notebook:**  
   Ouvrez et exécutez le fichier `explanatory_analysis.ipynb` via JupyterLab (ou VSC par exemple) pour explorer l'analyse des données.
 
-- **Streamlit Dashboard:**  
+- **Streamlit Dashboard:**
+  Vous pouvez cliquer ici pour voir le dashboard : [Lien du dashboard](https://certification-data-analysis-salaries-mrousse.streamlit.app/)
   Pour lancer le dashboard, exécutez la commande suivante dans votre terminal :
 
   ```bash
